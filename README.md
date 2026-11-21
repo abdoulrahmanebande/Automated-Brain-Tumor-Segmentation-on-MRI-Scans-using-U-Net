@@ -23,3 +23,17 @@ The Flask web application (`app.py`) converts raw `.tif` MRI slices into browser
 | **Mean Intersection over Union (IoU)** | **0.6504** | Reliable tumor boundary delineation |
 
 ## Quickstart
+
+1. **Clone the repository and install dependencies:**
+   ```bash
+   git clone https://github.com/abdoulrahmanebande/Automated-Brain-Tumor-Segmentation-on-MRI-Scans-using-U-Net/tree/main
+   cd brain-tumor-mri-segmentation
+   pip install -r requirements.txt
+   ```
+
+2. **Launch the Flask MRI segmentation web app:**
+   ```bash
+   python app.py
+   ```
+   Open `http://127.0.0.1:5000` in your browser and upload any `.tif` brain MRI slice to generate the predicted binary mask and clinical overlay.
+
